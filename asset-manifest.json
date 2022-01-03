@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Fpv_Money_Front/static/css/main.816759cb.css",
+    "main.js": "/Fpv_Money_Front/static/js/main.399d2230.js",
+    "index.html": "/Fpv_Money_Front/index.html",
+    "main.816759cb.css.map": "/Fpv_Money_Front/static/css/main.816759cb.css.map",
+    "main.399d2230.js.map": "/Fpv_Money_Front/static/js/main.399d2230.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.816759cb.css",
+    "static/js/main.399d2230.js"
+  ]
+}
