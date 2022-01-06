@@ -1,13 +1,45 @@
 {
   "files": {
-    "main.css": "/Fpv_Money_Front/static/css/main.18d0ea0c.css",
-    "main.js": "/Fpv_Money_Front/static/js/main.0df1904a.js",
+    "main.css": "/Fpv_Money_Front/static/css/main.f543965c.css",
+    "main.js": "/Fpv_Money_Front/static/js/main.124b981a.js",
+    "HomePage.js": "/Fpv_Money_Front/static/js/HomePage.8e37a54c.chunk.js",
+    "Login.css": "/Fpv_Money_Front/static/css/Login.d23e68c9.chunk.css",
+    "Login.js": "/Fpv_Money_Front/static/js/Login.e265209e.chunk.js",
+    "Register.css": "/Fpv_Money_Front/static/css/Register.1a16f05c.chunk.css",
+    "Register.js": "/Fpv_Money_Front/static/js/Register.534d0cb0.chunk.js",
+    "Categories.css": "/Fpv_Money_Front/static/css/Categories.f7c23415.chunk.css",
+    "Categories.js": "/Fpv_Money_Front/static/js/Categories.ba8e1a7d.chunk.js",
+    "static/css/164.c090c099.chunk.css": "/Fpv_Money_Front/static/css/164.c090c099.chunk.css",
+    "static/js/164.7c277364.chunk.js": "/Fpv_Money_Front/static/js/164.7c277364.chunk.js",
+    "static/js/516.91fc87d9.chunk.js": "/Fpv_Money_Front/static/js/516.91fc87d9.chunk.js",
+    "static/media/Знімок-екрана-2021-11-12-о-11.16.18.svg": "/Fpv_Money_Front/static/media/Знімок-екрана-2021-11-12-о-11.16.18.6f097a8c023c969149e04014b7f68b41.svg",
+    "static/media/aboutIcon.svg": "/Fpv_Money_Front/static/media/aboutIcon.521cf55b477d3f5177b16cecebf7e213.svg",
+    "static/media/openEye.svg": "/Fpv_Money_Front/static/media/openEye.63a8687c9679a4504c1338e8bf1e4281.svg",
+    "static/media/healthIcon.svg": "/Fpv_Money_Front/static/media/healthIcon.69322ef55bd1169a3cb72cd737df4531.svg",
+    "static/media/bookIcon.svg": "/Fpv_Money_Front/static/media/bookIcon.88b0c6806f7d575e87f790ca76f0372f.svg",
+    "static/media/loginIcon.svg": "/Fpv_Money_Front/static/media/loginIcon.0d74af02ae181ec27b6f08e74a7f0c56.svg",
+    "static/media/newsIcon.svg": "/Fpv_Money_Front/static/media/newsIcon.6b94d759bbdc6c28bd385c08838ef913.svg",
+    "static/media/socializeIcon.svg": "/Fpv_Money_Front/static/media/socializeIcon.38718e0f821f154d112c65e4a4cf12b5.svg",
     "index.html": "/Fpv_Money_Front/index.html",
-    "main.18d0ea0c.css.map": "/Fpv_Money_Front/static/css/main.18d0ea0c.css.map",
-    "main.0df1904a.js.map": "/Fpv_Money_Front/static/js/main.0df1904a.js.map"
+    "static/media/homeIcon.svg": "/Fpv_Money_Front/static/media/homeIcon.3bce67e8abf515b136251d193d383845.svg",
+    "static/media/closeEye.svg": "/Fpv_Money_Front/static/media/closeEye.3599f4ee499f35527d0b134986fbea6d.svg",
+    "static/media/burger.svg": "/Fpv_Money_Front/static/media/burger.e83b67a27cbc0b4a9fa3014965621451.svg",
+    "static/media/closes.svg": "/Fpv_Money_Front/static/media/closes.8a98c4927714ddf759d10c30ca3401ad.svg",
+    "main.f543965c.css.map": "/Fpv_Money_Front/static/css/main.f543965c.css.map",
+    "main.124b981a.js.map": "/Fpv_Money_Front/static/js/main.124b981a.js.map",
+    "HomePage.8e37a54c.chunk.js.map": "/Fpv_Money_Front/static/js/HomePage.8e37a54c.chunk.js.map",
+    "Login.d23e68c9.chunk.css.map": "/Fpv_Money_Front/static/css/Login.d23e68c9.chunk.css.map",
+    "Login.e265209e.chunk.js.map": "/Fpv_Money_Front/static/js/Login.e265209e.chunk.js.map",
+    "Register.1a16f05c.chunk.css.map": "/Fpv_Money_Front/static/css/Register.1a16f05c.chunk.css.map",
+    "Register.534d0cb0.chunk.js.map": "/Fpv_Money_Front/static/js/Register.534d0cb0.chunk.js.map",
+    "Categories.f7c23415.chunk.css.map": "/Fpv_Money_Front/static/css/Categories.f7c23415.chunk.css.map",
+    "Categories.ba8e1a7d.chunk.js.map": "/Fpv_Money_Front/static/js/Categories.ba8e1a7d.chunk.js.map",
+    "164.c090c099.chunk.css.map": "/Fpv_Money_Front/static/css/164.c090c099.chunk.css.map",
+    "164.7c277364.chunk.js.map": "/Fpv_Money_Front/static/js/164.7c277364.chunk.js.map",
+    "516.91fc87d9.chunk.js.map": "/Fpv_Money_Front/static/js/516.91fc87d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18d0ea0c.css",
-    "static/js/main.0df1904a.js"
+    "static/css/main.f543965c.css",
+    "static/js/main.124b981a.js"
   ]
 }
