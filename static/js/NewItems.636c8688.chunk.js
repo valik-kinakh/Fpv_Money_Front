@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkclient=self.webpackChunkclient||[]).push([[561],{4483:function(n,e,t){t.r(e),t.d(e,{default:function(){return i}});var u=t(6871),c=t(2791),f=t(184),i=function(n){var e=n.isLoggedIn,t=(0,u.s0)();return(0,c.useEffect)((function(){e||t("/login")}),[]),(0,f.jsx)(f.Fragment,{})}}}]);
-//# sourceMappingURL=NewItems.636c8688.chunk.js.map
