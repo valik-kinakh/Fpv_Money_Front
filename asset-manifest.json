@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Fpv_Money_Front/static/css/main.2e3e174f.css",
-    "main.js": "/Fpv_Money_Front/static/js/main.29916965.js",
-    "HomePage.js": "/Fpv_Money_Front/static/js/HomePage.a7cca2a2.chunk.js",
+    "main.js": "/Fpv_Money_Front/static/js/main.ee665162.js",
+    "HomePage.js": "/Fpv_Money_Front/static/js/HomePage.1586a0e7.chunk.js",
     "Login.css": "/Fpv_Money_Front/static/css/Login.0af4a45a.chunk.css",
     "Login.js": "/Fpv_Money_Front/static/js/Login.ad2f0ed0.chunk.js",
     "Register.css": "/Fpv_Money_Front/static/css/Register.1a16f05c.chunk.css",
@@ -29,7 +29,7 @@
     "static/js/325.7f6df467.chunk.js": "/Fpv_Money_Front/static/js/325.7f6df467.chunk.js",
     "static/js/426.80bb6c53.chunk.js": "/Fpv_Money_Front/static/js/426.80bb6c53.chunk.js",
     "static/js/692.03c56235.chunk.js": "/Fpv_Money_Front/static/js/692.03c56235.chunk.js",
-    "static/js/316.0e7fba36.chunk.js": "/Fpv_Money_Front/static/js/316.0e7fba36.chunk.js",
+    "static/js/10.e306348f.chunk.js": "/Fpv_Money_Front/static/js/10.e306348f.chunk.js",
     "static/js/307.e9512c59.chunk.js": "/Fpv_Money_Front/static/js/307.e9512c59.chunk.js",
     "static/media/Знімок-екрана-2021-11-12-о-11.16.18.svg": "/Fpv_Money_Front/static/media/Знімок-екрана-2021-11-12-о-11.16.18.6f097a8c023c969149e04014b7f68b41.svg",
     "static/media/aboutIcon.svg": "/Fpv_Money_Front/static/media/aboutIcon.521cf55b477d3f5177b16cecebf7e213.svg",
@@ -46,8 +46,8 @@
     "static/media/burger.svg": "/Fpv_Money_Front/static/media/burger.e83b67a27cbc0b4a9fa3014965621451.svg",
     "static/media/closes.svg": "/Fpv_Money_Front/static/media/closes.8a98c4927714ddf759d10c30ca3401ad.svg",
     "main.2e3e174f.css.map": "/Fpv_Money_Front/static/css/main.2e3e174f.css.map",
-    "main.29916965.js.map": "/Fpv_Money_Front/static/js/main.29916965.js.map",
-    "HomePage.a7cca2a2.chunk.js.map": "/Fpv_Money_Front/static/js/HomePage.a7cca2a2.chunk.js.map",
+    "main.ee665162.js.map": "/Fpv_Money_Front/static/js/main.ee665162.js.map",
+    "HomePage.1586a0e7.chunk.js.map": "/Fpv_Money_Front/static/js/HomePage.1586a0e7.chunk.js.map",
     "Login.0af4a45a.chunk.css.map": "/Fpv_Money_Front/static/css/Login.0af4a45a.chunk.css.map",
     "Login.ad2f0ed0.chunk.js.map": "/Fpv_Money_Front/static/js/Login.ad2f0ed0.chunk.js.map",
     "Register.1a16f05c.chunk.css.map": "/Fpv_Money_Front/static/css/Register.1a16f05c.chunk.css.map",
@@ -73,11 +73,11 @@
     "325.7f6df467.chunk.js.map": "/Fpv_Money_Front/static/js/325.7f6df467.chunk.js.map",
     "426.80bb6c53.chunk.js.map": "/Fpv_Money_Front/static/js/426.80bb6c53.chunk.js.map",
     "692.03c56235.chunk.js.map": "/Fpv_Money_Front/static/js/692.03c56235.chunk.js.map",
-    "316.0e7fba36.chunk.js.map": "/Fpv_Money_Front/static/js/316.0e7fba36.chunk.js.map",
+    "10.e306348f.chunk.js.map": "/Fpv_Money_Front/static/js/10.e306348f.chunk.js.map",
     "307.e9512c59.chunk.js.map": "/Fpv_Money_Front/static/js/307.e9512c59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e3e174f.css",
-    "static/js/main.29916965.js"
+    "static/js/main.ee665162.js"
   ]
 }
