@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclient=self.webpackChunkclient||[]).push([[721],{214:function(n,e,t){t.r(e),t.d(e,{default:function(){return f}});var u=t(6871),c=t(2791),i=t(184),f=function(n){var e=n.isLoggedIn,t=(0,u.s0)();return(0,c.useEffect)((function(){t(e?"/":"/login")}),[e]),(0,i.jsx)("div",{})}}}]);
+//# sourceMappingURL=Fpv_Money_Front.296274bd.chunk.js.map
