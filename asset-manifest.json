@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Fpv_Money_Front/static/css/main.2e3e174f.css",
-    "main.js": "/Fpv_Money_Front/static/js/main.c903439c.js",
+    "main.js": "/Fpv_Money_Front/static/js/main.7c511836.js",
     "HomePage.css": "/Fpv_Money_Front/static/css/HomePage.25e3baa6.chunk.css",
     "HomePage.js": "/Fpv_Money_Front/static/js/HomePage.49004a7d.chunk.js",
     "Login.css": "/Fpv_Money_Front/static/css/Login.3849ca6e.chunk.css",
@@ -23,6 +23,8 @@
     "Products.css": "/Fpv_Money_Front/static/css/Products.a0cf68ff.chunk.css",
     "Products.js": "/Fpv_Money_Front/static/js/Products.2e44b55f.chunk.js",
     "Fpv_Money_Front.js": "/Fpv_Money_Front/static/js/Fpv_Money_Front.296274bd.chunk.js",
+    "NotFound.css": "/Fpv_Money_Front/static/css/NotFound.cbb01a91.chunk.css",
+    "NotFound.js": "/Fpv_Money_Front/static/js/NotFound.a3465d9e.chunk.js",
     "static/css/17.0fa24c59.chunk.css": "/Fpv_Money_Front/static/css/17.0fa24c59.chunk.css",
     "static/js/17.b0544bfb.chunk.js": "/Fpv_Money_Front/static/js/17.b0544bfb.chunk.js",
     "static/js/818.51a59f58.chunk.js": "/Fpv_Money_Front/static/js/818.51a59f58.chunk.js",
@@ -47,7 +49,7 @@
     "static/media/burger.svg": "/Fpv_Money_Front/static/media/burger.e83b67a27cbc0b4a9fa3014965621451.svg",
     "static/media/closes.svg": "/Fpv_Money_Front/static/media/closes.8a98c4927714ddf759d10c30ca3401ad.svg",
     "main.2e3e174f.css.map": "/Fpv_Money_Front/static/css/main.2e3e174f.css.map",
-    "main.c903439c.js.map": "/Fpv_Money_Front/static/js/main.c903439c.js.map",
+    "main.7c511836.js.map": "/Fpv_Money_Front/static/js/main.7c511836.js.map",
     "HomePage.25e3baa6.chunk.css.map": "/Fpv_Money_Front/static/css/HomePage.25e3baa6.chunk.css.map",
     "HomePage.49004a7d.chunk.js.map": "/Fpv_Money_Front/static/js/HomePage.49004a7d.chunk.js.map",
     "Login.3849ca6e.chunk.css.map": "/Fpv_Money_Front/static/css/Login.3849ca6e.chunk.css.map",
@@ -69,6 +71,8 @@
     "Products.a0cf68ff.chunk.css.map": "/Fpv_Money_Front/static/css/Products.a0cf68ff.chunk.css.map",
     "Products.2e44b55f.chunk.js.map": "/Fpv_Money_Front/static/js/Products.2e44b55f.chunk.js.map",
     "Fpv_Money_Front.296274bd.chunk.js.map": "/Fpv_Money_Front/static/js/Fpv_Money_Front.296274bd.chunk.js.map",
+    "NotFound.cbb01a91.chunk.css.map": "/Fpv_Money_Front/static/css/NotFound.cbb01a91.chunk.css.map",
+    "NotFound.a3465d9e.chunk.js.map": "/Fpv_Money_Front/static/js/NotFound.a3465d9e.chunk.js.map",
     "17.0fa24c59.chunk.css.map": "/Fpv_Money_Front/static/css/17.0fa24c59.chunk.css.map",
     "17.b0544bfb.chunk.js.map": "/Fpv_Money_Front/static/js/17.b0544bfb.chunk.js.map",
     "818.51a59f58.chunk.js.map": "/Fpv_Money_Front/static/js/818.51a59f58.chunk.js.map",
@@ -81,6 +85,6 @@
   },
   "entrypoints": [
     "static/css/main.2e3e174f.css",
-    "static/js/main.c903439c.js"
+    "static/js/main.7c511836.js"
   ]
 }
