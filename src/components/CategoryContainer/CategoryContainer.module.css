@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.innerContainer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    border: none;
+    background-color: #ffffff;
+}
+
+.editInput{
+    margin: 2px 0px;
+    background-color: #EFEFEF;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    padding: 5px 2px 5px 20px;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        flex-wrap: nowrap;
+    }
+    .innerContainer {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1366px) {
+    .text {
+        padding: 30px;
+    }
+}

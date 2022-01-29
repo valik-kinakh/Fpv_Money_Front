@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 578px;
+    min-height: 400px;
+    background-color: rgba(239, 239, 239, 0.4);
+    margin: 50px auto 55px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.loaderWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: "Montserat", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.label {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #111111;
+}
+
+.changeNameInput {
+    width: 64%;
+    border: 1px solid rgba(180, 174, 174, 0.87);
+    color: #7c7a7a;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 370px) {
+    .container {
+        padding: 15px;
+        max-width: 350px;
+        min-height: 470px;
+    }
+}
+
+@media (min-width: 768px) {
+    .changeNameInput {
+        width: 220px;
+    }
+}

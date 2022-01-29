@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.innerContainer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalSelect {
+    font-size: 14px;
+    font-family: "Montserat", sans-serif;
+    font-weight: 300;
+    color: rgba(17, 17, 17);
+    line-height: 17px;
+    padding: 7px 11px 6px 0;
+    width: 60%;
+    height: 33px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        flex-wrap: nowrap;
+    }
+    .innerContainer {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .modalSelect {
+        height: 29px;
+    }
+
+}

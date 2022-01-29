@@ -1,0 +1,73 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.loaderWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.selectWrapper{
+    width: 100%;
+    display: flex;
+    margin: 10px auto 0;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+}
+
+.select{
+    height: 40px;
+    width: 100%;
+}
+
+.warning{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: red;
+}
+
+.moneyInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.optionsWrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .selectWrapper{
+        margin-top: 20px;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .select{
+        width: 250px;
+    }
+
+    .optionsWrapper{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .moneyInfo{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+}

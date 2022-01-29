@@ -1,0 +1,1 @@
+export { default } from './Fpv_Money_Front';

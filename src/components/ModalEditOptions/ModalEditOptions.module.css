@@ -1,0 +1,91 @@
+.blockInner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.closeWrapper{
+    position: relative;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.svg {
+    stroke: #205d76;
+    width: 20px;
+    position: absolute;
+    z-index: 1000;
+    top: -15px;
+    right: -30px;
+    cursor: pointer;
+}
+
+.modalWrapper{
+    background-color: white;
+    width: 80vw;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid #205d76;
+    border-radius: 10px;
+}
+
+.input {
+    display: block;
+    outline: none;
+    border-radius: 3px;
+    width: 60%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    padding: 6px 0 7px 10px;
+    border: 1px solid rgba(17, 17, 17, 0.3);
+}
+
+.input:focus {
+    border: 1px solid #ff8614;
+    border-radius: 6px;
+    color: rgba(17, 17, 17);
+}
+
+.modalSelect {
+    font-size: 14px;
+    font-family: "Montserat", sans-serif;
+    font-weight: 300;
+    color: rgba(17, 17, 17);
+    line-height: 17px;
+    padding: 7px 11px 6px 0;
+    width: 60%;
+    height: 33px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+@media (min-width: 768px){
+    .modalWrapper{
+        width: 700px;
+    }
+}
+
+@media (max-width: 370px) {
+    .modalWrapper {
+        padding: 10px 20px 2px 20px;
+    }
+
+    .label {
+        font-size: 15px;
+    }
+
+    .input {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .modalSelect {
+        height: 29px;
+    }
+
+}

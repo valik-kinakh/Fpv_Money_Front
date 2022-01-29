@@ -1,0 +1,23 @@
+.loaderWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.moneyWrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.moneyWrapper h2{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .moneyWrapper{
+        flex-direction: row;
+    }
+}

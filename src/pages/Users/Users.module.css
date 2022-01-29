@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.innerContainer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.loaderWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sum{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        flex-wrap: nowrap;
+    }
+    .innerContainer {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+

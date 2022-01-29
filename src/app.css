@@ -1,0 +1,30 @@
+.lazyLoaderWrapper {
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editTrue {
+    stroke: #ff8614;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.editTrue:hover{
+    transform: scale(1.2);
+}
+
+.editFalse {
+    stroke: #19495c;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.editFalse:hover{
+    transform: scale(1.2);
+}
+
+@media (min-width: 1366px) {
+    .lazyLoaderWrapper {
+        height: 50vw;
+    }
+}
