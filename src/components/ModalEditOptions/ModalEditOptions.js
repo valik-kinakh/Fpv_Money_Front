@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import DatePicker from '@mui/lab/DatePicker';
+import Loader from 'react-loader-spinner';
 
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,6 +18,7 @@ toast.configure();
 
 const ModalEditOptions = ({product, close, fetchProducts}) => {
     const [mounted, setMounted] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     const [name, setName] = useState(product.name);
     const [categoryName, setCategoryName] = useState(product.categoryName);
@@ -74,6 +76,7 @@ const ModalEditOptions = ({product, close, fetchProducts}) => {
     }
 
     const handleSaveClick = async () => {
+        setLoading(true);
         try {
              await productsApi.changeProductName(product.id,name);
              await productsApi.changeProductCategory(product.id, categoryName);
@@ -89,12 +92,14 @@ const ModalEditOptions = ({product, close, fetchProducts}) => {
             toast.success('Product successfully updated',{
                 position:'top-center'
             })
+            setLoading(false)
             close();
             fetchProducts();
         }catch (e) {
             toast.error(e.response.data.message,{
                 position:'top-center'
-            })
+            });
+            setLoading(false);
         }
     }
 
@@ -173,7 +178,11 @@ const ModalEditOptions = ({product, close, fetchProducts}) => {
                 />
             </LocalizationProvider>
         </div>
-        <UploadContentButton text='save' disabled={disabledButton()} onClick={handleSaveClick}/>
+        {
+            loading ? <div className={s.loaderWrapper}>
+                <Loader type="Circles" color="#ff8614" height={35} width={35}/>
+            </div> : <UploadContentButton text='save' disabled={disabledButton()} onClick={handleSaveClick}/>
+        }
     </div>)
 }
 

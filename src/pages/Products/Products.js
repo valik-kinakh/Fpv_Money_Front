@@ -49,7 +49,12 @@ const Products = ({isLoggedIn}) => {
             const response = await productsApi.getProducts(state);
             setProducts(response);
             const sumSpendArr = [...response].map(el => el.price.purchasePrice);
-            const sumEarnedArr = [...response].map(el=>el.price.sallingPrice);
+            const sumEarnedArr = [...response].map(el=>{
+                if (el.price.sallingPrice){
+                    return el.price.sallingPrice - el.price.purchasePrice
+                }
+                return 0;
+            });
             setEarnedMoney(sumEarnedArr);
             setSpendMoney(sumSpendArr);
         } catch (e) {

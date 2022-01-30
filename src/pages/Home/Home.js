@@ -91,10 +91,12 @@ const Home = ({isLoggedIn}) => {
 
     return(
         <div>
-            <div className={s.moneyWrapper}>
-                <h2>Money USD:{dollars}</h2>
-                <h2>Money UAN: {output}</h2>
-            </div>
+            {
+                !loading && <div className={s.moneyWrapper} >
+                    <h2>Money USD:{dollars}</h2>
+                    <h2>Money UAN: {output}</h2>
+                </div>
+            }
             {
                 data.length > 0 && !loading && <PieChart data={data}/>
             }

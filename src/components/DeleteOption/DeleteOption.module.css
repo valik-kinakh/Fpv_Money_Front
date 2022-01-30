@@ -1,0 +1,31 @@
+.wrapper{
+    width: 280px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.message{
+    text-align: center;
+    font-size: 16px;
+    color: #111111;
+}
+
+.loaderWrapper{
+    display: flex;
+    justify-content: left;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 20px auto 0;
+}
+
+@media (min-width: 768px) {
+    .wrapper{
+        width: 330px;
+        padding: 20px;
+    }
+}

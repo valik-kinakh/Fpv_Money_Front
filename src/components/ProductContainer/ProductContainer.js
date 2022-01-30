@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useModal } from "react-hooks-use-modal";
 import {useState} from "react";
 import ModalEditOptions from "../ModalEditOptions";
+import DeleteOption from "../DeleteOption";
 
 toast.configure();
 
@@ -15,6 +16,11 @@ const ProductContainer = ({product, fetchCategories}) => {
         preventScroll: true,
         closeOnOverlayClick: true
     });
+
+    const [DelModal, open2, close2, isOpen2] = useModal('root',{
+        preventScroll:true,
+        closeOnOverlayClick: true
+    })
 
     const handleDelete = async () => {
         try {
@@ -32,6 +38,10 @@ const ProductContainer = ({product, fetchCategories}) => {
 
     const handleOpen = () => {
         open();
+    }
+
+    const handleDelOpen = () => {
+        open2();
     }
 
     return(<div className={s.wrapper}>
@@ -55,11 +65,14 @@ const ProductContainer = ({product, fetchCategories}) => {
         </div>
         <div className={s.buttonsWrapper}>
             <UploadContentButton text='Edit product' disabled={false} onClick={handleOpen}/>
-            <UploadContentButton text='Delete product' disabled={false} onClick={handleDelete}/>
+            <UploadContentButton text='Delete product' disabled={false} onClick={handleDelOpen}/>
         </div>
         <Modal>
             <ModalEditOptions product={product} close={close} fetchProducts={fetchCategories}/>
         </Modal>
+        <DelModal>
+           <DeleteOption message='Do you want to delete this product' close={close2} id={product.id} deleteFunc={handleDelete}/>
+        </DelModal>
     </div>)
 }
 
