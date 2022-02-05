@@ -25,7 +25,6 @@ const ModalEditOptions = ({product, close, fetchProducts}) => {
     const [purchasePrice, setPurchasePrice] = useState(product.price.purchasePrice);
     const [sellingPrice, setSellingPrice] = useState(product.price.sallingPrice? product.price.sallingPrice :'');
     const [purchaseDate, setPurchaseDate] = useState(product.transferDate.purchaseDate);
-    const [arrivalDate, setArrivalDate] = useState(product.transferDate.arrivalDate? product.transferDate.arrivalDate: '');
     const [saleDate, setSaleDate] = useState(product.transferDate.saleDate? product.transferDate.saleDate : '');
 
     const [categories, setCategories] = useState([]);
@@ -82,9 +81,6 @@ const ModalEditOptions = ({product, close, fetchProducts}) => {
              await productsApi.changeProductCategory(product.id, categoryName);
             if (sellingPrice){
                 await productsApi.changeSellingPrice(product.id, sellingPrice);
-            }
-            if (arrivalDate){
-                await productsApi.addArrivalDate(product.id, new Date(arrivalDate).toUTCString())
             }
             if (saleDate){
                 await productsApi.addSellingDate(product.id, new Date(saleDate).toUTCString())
@@ -143,21 +139,6 @@ const ModalEditOptions = ({product, close, fetchProducts}) => {
                     value={purchaseDate}
                     onChange={(newValue) => {
                         setPurchaseDate(newValue);
-                    }}
-                    renderInput={(params) => <TextField {...params} />}
-                />
-            </LocalizationProvider>
-        </div>
-        <div className={s.blockInner}>
-            <label className={s.label}>Arrival date</label>
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
-                <DatePicker
-                    disableFuture
-                    label="Date"
-                    openTo="day"
-                    value={arrivalDate}
-                    onChange={(newValue) => {
-                        setArrivalDate(newValue);
                     }}
                     renderInput={(params) => <TextField {...params} />}
                 />

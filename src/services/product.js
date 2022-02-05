@@ -33,10 +33,6 @@ const changeSellingPrice = (id, price) => {
     return axios.post(`Product/addSallingPrice/${id}?price=${price}`).then(({data})=> data);
 }
 
-const addArrivalDate = (id, date) => {
-    return axios.post(`Product/addArrivalDate/${id}?time=${date}`).then(({data})=> data);
-}
-
 const addSellingDate = (id, date) => {
     return axios.post(`Product/addSallingDate/${id}?time=${date}`).then(({data})=> data);
 }
@@ -48,7 +44,6 @@ const productsApi = {
     changeProductName,
     changeProductCategory,
     changeSellingPrice,
-    addArrivalDate,
     addSellingDate
 }
 

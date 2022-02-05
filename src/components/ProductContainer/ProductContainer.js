@@ -58,9 +58,6 @@ const ProductContainer = ({product, fetchCategories}) => {
             <p>Purchase date: {moment(product.transferDate.purchaseDate).format('DD/MM/YYYY')}</p>
         </div>
         <div className={s.textWrapper}>
-            <p>{product.transferDate.arrivalDate? `Arrival date: ${moment(product.transferDate.arrivalDate).format('DD/MM/YYYY')}`:'No arrival date found'}</p>
-        </div>
-        <div className={s.textWrapper}>
             <p>{product.transferDate.saleDate? `Sell date: ${moment(product.transferDate.saleDate).format('DD/MM/YYYY')}`:'No selling date found'}</p>
         </div>
         <div className={s.buttonsWrapper}>
