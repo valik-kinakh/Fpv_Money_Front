@@ -7,6 +7,17 @@
     margin: 10px 0px;
 }
 
+.select{
+    min-width: 120px;
+    height: 40px;
+}
+
+.loaderWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;

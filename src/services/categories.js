@@ -23,14 +23,19 @@ const editCategory = (newName, id) => {
 }
 
 const getCategories = () => {
-    return axios.get('/Catigories/GetAll').then(({data})=>data);
+    return axios.get('/Catigories/GetAllCategories').then(({data})=>data);
+}
+
+const getProductsByCategoryId = (id, state) => {
+    return axios.get(`/Catigories/GetProductsFromCategory?id=${id}&state=${state}`).then(({data})=>data);
 }
 
 const categoriesApi = {
     addCategory,
     removeCategory,
     editCategory,
-    getCategories
+    getCategories,
+    getProductsByCategoryId
 }
 
 export default categoriesApi;

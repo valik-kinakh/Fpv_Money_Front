@@ -26,7 +26,7 @@ const Products = ({isLoggedIn}) => {
     const [spendMoney, setSpendMoney] = useState([]);
     const [loading, setLoading] = useState(false)
     const [mounted, setMounted] = useState(false);
-    const [state, setState] = useState(2);
+    const [state, setState] = useState(0);
 
     useEffect(() => {
         if (!isLoggedIn) {

@@ -55,6 +55,9 @@ const ProductContainer = ({product, fetchCategories}) => {
            <p>Purchase price: {product.price.purchasePrice}</p>
         </div>
         <div className={s.textWrapper}>
+            <p>Selling price: {product.price.sallingPrice? product.price.sallingPrice : 'No selling price'}</p>
+        </div>
+        <div className={s.textWrapper}>
             <p>Purchase date: {moment(product.transferDate.purchaseDate).format('DD/MM/YYYY')}</p>
         </div>
         <div className={s.textWrapper}>

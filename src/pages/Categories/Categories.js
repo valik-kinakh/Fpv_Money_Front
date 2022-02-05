@@ -55,7 +55,7 @@ const Categories = ({isLoggedIn}) => {
                 {
                     categories.length > 0 && categories.map(category=>{
                         return <CategoryContainer key={category.id} id={category.id} categoryName={category.categoryName}
-                                                  products={category.products} fetchCategories={fetchCategories}
+                                                   fetchCategories={fetchCategories}
                         />
                     })
                 }
