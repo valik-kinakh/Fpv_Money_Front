@@ -17,8 +17,8 @@ const deleteProduct = (id) => {
     return axios.delete(`/Product/delete/${id}`);
 }
 
-const getProducts = (state) => {
-    return axios.get(`/Product/GetAll?state=${state}`).then(({data})=> data);
+const getProducts = (filter) => {
+    return axios.post(`/Product/GetAll`, filter).then(({data})=> data);
 }
 
 const changeProductName = (id, name) => {

@@ -3,9 +3,11 @@ import {useNavigate} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import Container from "../../components/Container";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
-import DatePicker from "@mui/lab/DatePicker";
+import MobileDateRangePicker from '@mui/lab/MobileDateRangePicker';
 import TextField from "@mui/material/TextField";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
+import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,6 +15,7 @@ import {productsApi} from "../../services";
 import ProductContainer from "../../components/ProductContainer";
 import states from "../../config/states";
 import Loader from "react-loader-spinner";
+import moment from "moment";
 import {MenuItem, Select} from "@mui/material";
 
 toast.configure();
@@ -26,6 +29,7 @@ const Products = ({isLoggedIn}) => {
     const [spendMoney, setSpendMoney] = useState([]);
     const [loading, setLoading] = useState(false)
     const [mounted, setMounted] = useState(false);
+    const [value, setValue] = useState([null,null]);
     const [state, setState] = useState(0);
 
     useEffect(() => {
@@ -44,9 +48,17 @@ const Products = ({isLoggedIn}) => {
         }
     }, [state])
 
+    useEffect(()=>{
+        fetchProducts();
+    },[value])
+
     const fetchProducts = async () => {
         try {
-            const response = await productsApi.getProducts(state);
+            const response = await productsApi.getProducts({
+                state,
+                startDate:value[0]?moment(value[0]).toISOString():null,
+                endDate:value[1]?moment(value[1]).toISOString():null
+            });
             setProducts(response);
             const sumSpendArr = [...response].map(el => el.price.purchasePrice);
             const sumEarnedArr = [...response].map(el=>{
@@ -86,28 +98,25 @@ const Products = ({isLoggedIn}) => {
                     </div>
                     <div className={s.selectWrapper}>
                         <LocalizationProvider dateAdapter={AdapterDateFns}>
-                            <DatePicker
-                                disableFuture
-                                label="Start date"
-                                openTo="day"
-                                value={null}
-                                onChange={(newValue) => {
-                                }}
-                                renderInput={(params) => <TextField {...params} />}
-                            />
-                        </LocalizationProvider>
-                    </div>
-                    <div className={s.selectWrapper}>
-                        <LocalizationProvider dateAdapter={AdapterDateFns}>
-                            <DatePicker
-                                disableFuture
-                                label="End date"
-                                openTo="day"
-                                value={null}
-                                onChange={(newValue) => {
-                                }}
-                                renderInput={(params) => <TextField {...params} />}
-                            />
+                            <Stack spacing={3}>
+                                <MobileDateRangePicker
+                                    startText="Start date"
+                                    endText='End date'
+                                    clearable
+                                    value={value}
+                                    disableFuture
+                                    onChange={(newValue) => {
+                                            setValue(newValue);
+                                    }}
+                                    renderInput={(startProps, endProps) => (
+                                        <React.Fragment>
+                                            <TextField {...startProps} />
+                                            <Box sx={{ mx: 2 }}> to </Box>
+                                            <TextField {...endProps} />
+                                        </React.Fragment>
+                                    )}
+                                />
+                            </Stack>
                         </LocalizationProvider>
                     </div>
                 </div>
